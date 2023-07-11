@@ -16,11 +16,11 @@
         <div id="spinner"></div>
     </div>
     <div id="header" class="animated slideInDown" style="animation-delay:1.8s;">
-    <div id="title">FERNANDO.</div><br>
+    <div id="title">PROYECTO INDIVIDUAL 1.</div><br>
     <div id="links">
         <a href="#skills">DESCRIPCION</a>
         <a href="#work" style="margin:0px 60px;">PROYECTO INDIVIDUAL 1</a>
-        <a href="#contact">PRESENTACION</a>
+        <a href="#contact">INSTRUCCIONES</a>
     </div>
     </div>
 
@@ -38,45 +38,75 @@
                  <div>
                         <p>
                             Analisis ETL y Analisis EDA de los datos propuestos 
+                            Realize analisis de los dataset propuestos ,aplicando transformaciones sobre los datos cada paso fue guardado ademas,de realizar en su mayoria dichos analisis  mediantes estructuras de python  para poder ver en detalle y paso a paso lo cambios e la informacion
                         </p>
                  </div> 
              </div>
          
               <div id="work">
-                 <h1>Consultas a api (endpoint)</h1>
+                 <h1>CONSULTAS A API</h1>
 
 
 
                 <div class="project">
-                 <h2>Analisis Servicio Streaming</h2>
-                 <div>relize nalii de las opcione en plataforma propuetas para comparar ventajas de deventajas de cada modalidad y propuesta caracteristica de cada plataforma
-                 </div>
-              
-                 <button class="btn_one" onclick="myFunction()">botoncon_script</button>
-                  <script>function myFunction()
-                    { 
-                    
-                     nombre = prompt("Ingresa parametro:",'');
-                     href="https://pi1-he.onrender.com/cantidad_filmaciones_mes/" 
-                     location.href=this.href+nombre 
+                 <h2>CONSULTA SOBRE CANTIDAD DE PELICULAS EN DETERMINADO IDIOMA</h2>
+                 <div>Para esta funcion se obtuvo la informacion particular de cada pelicula mediante el analisis paso a paso de la informacion en el diccionario correspondiente a la fila del id de pelicula o titulo buscado
+                 los siguientes botones, el primero lleva a la forma /docs de la api para ingresar los parametro de busqueda y el segundo a la respuesta json de la misma api con un parametro cargado,debe ingrear la abreviatura correspondiente al idioma ,de la contenidas en el dataset ,de no ingresar alguna correpondiente, recibira mensaje de ingreso incorrecto e instruccion.
+                 </div>                         
+                 <a href="https://pi1-he-dev.onrender.com/docs#/default/peliculas_idioma_peliculas_idioma__Idioma__get" target="_blank" rel="noopener noreferrer" onclick="location.href=this.href"><button  class="btn_two">peliculas_idioma:</button></a>
 
-                    }
-                  </script>
+                 <a href="https://pi1-he-dev.onrender.com/peliculas_idioma/en" target="_blank" rel="noopener noreferrer" ><button  class="btn_two">peliculas_idioma:en</button></a>
 
-                  <button class="btn_one" onclick="myFunc()">con_script</button>
-                  <script>function myFunc()
-                 	{
-                    nomb = prompt("Ingresa parametro:",'');
-                  
-                    }
-                  </script>
+                                 <div class="project">
+                 <h2>CONSULTA SOBRE LA DURACION DE DETERMINADA PELICULA INGRESANDO SU NOMBRE</h2>
+                 <div>Una ves creada la columna con lo nobre de cada pelicula la consultas se hacen bucando la coincidencia del nombre almacenado con el parametro provisto. Los siguientes botones, el primero lleva a la forma /docs de la api para ingresar los parametro de busqueda y el segundo a la respuesta json de la misma api con un parametro cargado,debe ingresar El nombre repetando mayusculas y minusculas como los nombres contenidos,de no ingresar alguna correspondiente, recibira mensaje de ingreso incorrecto e instruccion.
+                 </div>                         
+                 <a href="https://pi1-he-dev.onrender.com/docs#/default/peliculas_duracion_peliculas_duracion__Pelicula__get" target="_blank" rel="noopener noreferrer" onclick="location.href=this.href"><button  class="btn_two">peliculas_duracion:</button></a>
 
-                                          
-                 <a href="https://pi1-he.onrender.com/cantidad_filmaciones_mes/" target="_blank" rel="noopener noreferrer" onclick="location.href=this.href+nomb"><button  class="btn_two">Proyect1_click </button></a>
+                 <a href="https://pi1-he-dev.onrender.com/peliculas_duracion/Jumanji" target="_blank" rel="noopener noreferrer" ><button  class="btn_two">peliculas_duracion:Jumanji</button></a>
 
-                 <p>Dale un vistazo <a href="https://pi1-he.onrender.com/docs" target="_blank" rel="noopener noreferrer">https://pi1-he.onrender.com/docs</a>.</p>
+                                 <div class="project">
+                 <h2>CONSULTA SOBRE FRANQUICIAS</h2>
+                 <div>Para esta funcion se obtuvo la informacion particular de cada pelicula mediante el analisis paso a paso de la informacion en el diccionario correspondiente ,o informacion anidada para obtener solo la informacion de el nombre de la franquicia para cada id de pelicula. 
+                 los siguientes botones, el primero lleva a la forma /docs de la api para ingresar los parametro de busqueda y el segundo a la respuesta json de la misma api con un parametro cargado,debe ingresar el nombre de la franquicia ,de las contenidas en el dataset ,de no ingresar alguna correspondiente, recibira mensaje de ingreso incorrecto e instruccion.
+                 </div>                         
+                 <a href="https://pi1-he-dev.onrender.com/docs#/default/franquicia_franquicia__Franquicia__get" target="_blank" rel="noopener noreferrer" onclick="location.href=this.href"><button  class="btn_two">franquicia :</button></a>
 
-                 <a href="consultas.html" target="_blank" rel="noopener noreferrer" >Accede a la consultas</a>
+                 <a href="https://pi1-he-dev.onrender.com/franquicia/Toy%20Story%20Collection" target="_blank" rel="noopener noreferrer" ><button  class="btn_two">franquicia :Toy Story Collection</button></a>
+
+                                 <div class="project">
+                 <h2>CONSULTA SOBRE CANTIDAD DE PELICULAS POR DETERMINADO PAIS</h2>
+                 <div>Para esta funcion se obtuvo la informacion particular de cada pais mediante el analisis paso a paso de la informacion en el diccionario correspondiente a la fila del id de pelicula o titulo buscado (analizando production_countries).Los siguientes botones, el primero lleva a la forma /docs de la api para ingresar los parametro de busqueda y el segundo a la respuesta json de la misma api con un parametro cargado,debe ingresar el nombre respetando mayusculas y minusculas,de los contenidos en el dataset ,de no ingresar alguno correpondiente, recibira mensaje de ingreso incorrecto e instruccion.
+                 </div>                         
+                 <a href="https://pi1-he-dev.onrender.com/docs#/default/peliculas_pais_peliculas_pais__Pais__get" target="_blank" rel="noopener noreferrer" onclick="location.href=this.href"><button  class="btn_two">peliculas_pais :</button></a>
+
+                 <a href="https://pi1-he-dev.onrender.com/peliculas_pais/United%20States%20of%20America" target="_blank" rel="noopener noreferrer" ><button  class="btn_two">peliculas_pais :United States of America</button></a>
+
+                                 <div class="project">
+                 <h2>CONSULTA SOBRE DETERMINADA PRODUCTORA Y INFORMACION DE LA MISMA</h2>
+                 <div>Para esta funcion se obtuvo la informacion particular de cada productora mediante el analisis paso a paso de la informacion en el diccionario correspondiente a la fila del id de pelicula o titulo buscado
+                 los siguientes botones, el primero lleva a la forma /docs de la api para ingresar los parametro de busqueda y el segundo a la respuesta json de la misma api con un parametro cargado,debe ingresar el nombre respetando mayusculas y minusculas,de la contenidas en el dataset ,de no ingresar alguna correpondiente, recibira mensaje de ingreso incorrecto e instruccion.
+                 </div>                         
+                 <a href="https://pi1-he-dev.onrender.com/docs#/default/productoras_exitosas_productoras_exitosas__Productora__get" target="_blank" rel="noopener noreferrer" onclick="location.href=this.href"><button  class="btn_two">productoras_exitosas:</button></a>
+
+                 <a href="https://pi1-he-dev.onrender.com/productoras_exitosas/Warner%20Bros." target="_blank" rel="noopener noreferrer" ><button  class="btn_two">productoras_exitosas:Warner Bros.</button></a>
+
+                                 <div class="project">
+                 <h2>CONSULTA SOBRE CANTIDAD DE PELICULAS POR DIRECTOR</h2>
+                 <div>Para esta funcion se obtuvo la informacion particular de cada director mediante el analisis paso a paso de la informacion en el diccionario correspondiente a la fila del id de pelicula revizando que el trabajo (job) ea director.Los siguientes botones, el primero lleva a la forma /docs de la api para ingresar los parametro de busqueda y el segundo a la respuesta json de la misma api con un parametro cargado,debe ingresar El nombre del director (respetando mayusculas y minusculas) de la contenidos en el dataset ,de no ingresar alguno correpondiente, recibira mensaje de ingreso incorrecto e instruccion.
+                 </div>                         
+                 <a href="https://pi1-he-dev.onrender.com/docs#/default/get_director_get_director__nombre_director__get" target="_blank" rel="noopener noreferrer" onclick="location.href=this.href"><button  class="btn_two">get_director :</button></a>
+
+                 <a href="https://pi1-he-dev.onrender.com/get_director/Michelle%20Danner" target="_blank" rel="noopener noreferrer" ><button  class="btn_two">get_director :Michelle Danne</button></a>
+
+                                 <div class="project">
+                 <h2>CONSULTA EN MODELO DE RECOMENDACION</h2>
+                 <div>Para esta funcion se obtuvo la informacion particular de cada pelicula y uniendo los dataset provistos pra poder coniltar la informacion en un unico archivo .
+                 Los siguientes botones, el primero lleva a la forma /docs de la api para ingresar los parametro de busqueda y el segundo a la respuesta json de la misma api con un parametro cargado,recuerso diferenciar mayuscula de minusculas,de la contenidas en el dataset ,de no ingresar alguna correpondiente, recibira mensaje de ingreso incorrecto e instruccion.
+                 </div>                         
+                 <a href="https://pi1-he-dev.onrender.com/docs#/default/recomendacion_recomendacion__titulo__get" target="_blank" rel="noopener noreferrer" onclick="location.href=this.href"><button  class="btn_two">recomendacion :</button></a>
+
+                 <a href="https://pi1-he-dev.onrender.com/recomendacion/Jumanji" target="_blank" rel="noopener noreferrer" ><button  class="btn_two">recomendacion :Jumanji</button></a>             
 
 
                 </div>
@@ -85,7 +115,7 @@
          
               
                  <div id="details">
-                    <a class="btn_social"><i class="fas fa-at"></i></a>
+
        
                  </div>   
              </div>
