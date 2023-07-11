@@ -48,3 +48,5 @@ devolviendo resultados requeridos en formato especificos.
 * [productoras_exitosas:Warner Bros](https://pi1-he-dev.onrender.com/productoras_exitosas/Warner%20Bros.)
 * [get_director :Michelle Danne](https://pi1-he-dev.onrender.com/get_director/Michelle%20Danner)
 * [recomendacion :Jumanji](https://pi1-he-dev.onrender.com/recomendacion/Jumanji)
+
+[pagina APi](https://fe23arg.github.io/Pi1_dev2_12/) Este link lleva a pagina que representa visualmente y mediante estructura api rest las consultas con un entorno separado
