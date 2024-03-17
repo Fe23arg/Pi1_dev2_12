@@ -2,7 +2,6 @@
 
 ![presentacion](https://github.com/Fe23arg/Pi1_dev2_12/blob/main/raw/pre_we.jpg)
 
-https://github.com/Fe23arg/Pi1_dev2_12/blob/main/raw/pre_we.jpg
 Proyecto individual: consultas realizadas sobre los datos  de peliculas
 devolviendo resultados requeridos en formato especificos.
 
